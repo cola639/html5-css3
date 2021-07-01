@@ -144,3 +144,34 @@ a {
     padding-left: 0;
   }
 }
+/* icon */
+.icon-container {
+  align-items: center;
+  background-color: #f3f9fa;
+  border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+.icon-container--accent {
+  background-color: var(--color-accent);
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+.icon--white {
+  fill: #fff;
+}
