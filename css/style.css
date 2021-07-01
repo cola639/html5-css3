@@ -2,11 +2,12 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-third: #ff3400;
+  --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
 
+/* Typrography */
 html {
   font-size: 62.5%;
 }
@@ -53,5 +54,33 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* link */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.link-arrow::after {
+  margin-left: 5px;
+  content: "-->";
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
