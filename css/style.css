@@ -8,6 +8,7 @@
   --color-body: #918ca4;
   --color-content: #fff;
   --color-border: #ccc;
+  --color-body-darker: #5c5577;
   --border-radius: 30px;
 }
 
@@ -369,6 +370,56 @@ a {
   }
 
   .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+}
+/* meida */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+/* quotes */
+.quote {
+  color: var(--color-body-darker);
+  font-size: 2.2rem;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.quote__line {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.quote__author {
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.quote__organization {
+  margin-top: 0;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+@media screen and (min-width: 1024px) {
+  .quote__text {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2.4rem;
+  }
+  .quote__organization {
     font-size: 1.6rem;
   }
 }
