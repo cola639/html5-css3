@@ -545,8 +545,63 @@ a {
 .nav {
   background-color: #000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+.nav__toggler {
+  opacity: 0.6;
 }
 
 .nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #ccc;
+  opacity: 0.6;
+  transition-property: all 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__item {
+    border: none;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+    max-height: 100%;
+    opacity: 1;
+    font-size: 1.6rem;
+  }
 }
