@@ -68,6 +68,11 @@ p {
   }
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* link */
 a {
   text-decoration: none;
@@ -213,6 +218,11 @@ a {
 
 .btn--accent:hover {
   background: #ec3000;
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn--block {
@@ -541,6 +551,44 @@ a {
   max-height: 100vh;
 }
 
+/* Blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+  /* border: 2px solid red; */
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
 /* nav */
 .nav {
   background-color: #000;
@@ -603,5 +651,29 @@ a {
     max-height: 100%;
     opacity: 1;
     font-size: 1.6rem;
+  }
+}
+
+/* hero */
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: var(--color-body);
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
