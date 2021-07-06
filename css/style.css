@@ -570,7 +570,7 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  /* border: 2px solid red; */
+  border: 0;
 }
 
 .block__header {
@@ -718,7 +718,7 @@ a {
   }
 }
 
-/* grid block */
+/* plans block */
 .block-plans .grid {
   gap: 6rem;
 }
@@ -726,4 +726,28 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* feature */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+.feature_heading {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
