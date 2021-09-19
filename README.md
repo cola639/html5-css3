@@ -5,4 +5,4 @@
 - 模块化开发网页每个部分
 - BEM命名规范以及OOP编写CSS
 
-* : [Cola639的博客](http://www.gzgxh.xyz)
+* 项目展示: [Cola639的博客](http://www.gzgxh.xyz:90)
